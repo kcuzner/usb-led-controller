@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name usb-led-controller)(type Legacy)(uri ${KIPRJMOD}/usb-led-controller.lib)(options "")(descr ""))
+)
