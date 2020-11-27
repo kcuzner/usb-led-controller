@@ -1,0 +1,10 @@
+(module VIA-0.4_0.8-TENT (layer F.Cu) (tedit 5FC13295)
+  (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value VIA-0.4_0.8-TENT (at 0 0) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 0.8 0.8) (drill 0.4) (layers *.Cu)
+    (zone_connect 2))
+)

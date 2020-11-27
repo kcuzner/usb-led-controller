@@ -7,12 +7,13 @@ I made one of these **ages** ago for my first self-built computer using all thro
 microcontroller. It eventually broke after I shorted one of the MOSFETs out on my case when banging around in there
 while it was turned on.
 
-This one is a refresh of that idea, with a few additions I've picked up after a decade of tinkering:
+This one is a refresh of that idea, with a few additions I've picked up after another decade of tinkering:
 
- - STM32L052 microcontroller
-   - All 3.3V
-   - Crystal-less USB capability
- - Driverless HID device implementation
- - Linux control daemon
- - Windows control service
+ - STM32L042 microcontroller with crystal-less USB capability.
+ - Outputs for 12V RGB and 5V WS2812.
+ - 2.5" HDD screw pattern for mounting.
+ - No secondary side or through-hole components.
+ - Driverless HID device implementation.
+ - Linux control daemon.
+ - Windows control service.
 
