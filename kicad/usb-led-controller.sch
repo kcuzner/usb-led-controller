@@ -170,6 +170,7 @@ F 0 "U5" H 5300 5415 50  0000 C CNN
 F 1 "USBLC6" H 5300 5324 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-666" H 5300 4900 50  0001 C CNN
 F 3 "" H 5300 4900 50  0001 C CNN
+F 4 "497-5026-2-ND" H 5300 4900 50  0001 C CNN "Part Number"
 	1    5300 4900
 	1    0    0    -1  
 $EndComp
@@ -1181,4 +1182,28 @@ F 4 "952-3233-ND" H 1350 1100 50  0001 C CNN "Part Number"
 	1    1350 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FDF827D
+P 1450 2050
+F 0 "H1" H 1550 2096 50  0000 L CNN
+F 1 "MountingHole" H 1550 2005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 2050 50  0001 C CNN
+F 3 "~" H 1450 2050 50  0001 C CNN
+	1    1450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FDF8F49
+P 1450 2300
+F 0 "H2" H 1550 2346 50  0000 L CNN
+F 1 "MountingHole" H 1550 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1450 2300 50  0001 C CNN
+F 3 "~" H 1450 2300 50  0001 C CNN
+	1    1450 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 2250 0    50   ~ 0
+Arrange holes with dimensions for the\nconnector-half of a 2.5" drive
 $EndSCHEMATC
