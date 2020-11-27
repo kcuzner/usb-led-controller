@@ -1206,4 +1206,6 @@ F 3 "~" H 1450 2300 50  0001 C CNN
 $EndComp
 Text Notes 2100 2250 0    50   ~ 0
 Arrange holes with dimensions for the\nconnector-half of a 2.5" drive
+Text Label 3650 1300 0    50   ~ 0
+REG_3V3_EN
 $EndSCHEMATC
