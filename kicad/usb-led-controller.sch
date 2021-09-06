@@ -184,10 +184,10 @@ L Device:C C4
 U 1 1 5FC099A6
 P 4750 2950
 F 0 "C4" H 4865 2996 50  0000 L CNN
-F 1 "1u" H 4865 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 2800 50  0001 C CNN
+F 1 "0u1" H 4865 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4788 2800 50  0001 C CNN
 F 3 "~" H 4750 2950 50  0001 C CNN
-F 4 "1276-1102-2-ND" H 4750 2950 50  0001 C CNN "Part Number"
+F 4 "1276-1043-2-ND" H 4750 2950 50  0001 C CNN "Part Number"
 	1    4750 2950
 	1    0    0    -1  
 $EndComp
@@ -213,18 +213,6 @@ F 2 "Capacitor_SMD:C_0402_1005Metric" H 5488 2800 50  0001 C CNN
 F 3 "~" H 5450 2950 50  0001 C CNN
 F 4 "1276-1043-2-ND" H 5450 2950 50  0001 C CNN "Part Number"
 	1    5450 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 5FC0A218
-P 6050 5800
-F 0 "C7" H 6165 5846 50  0000 L CNN
-F 1 "0u1" H 6165 5755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6088 5650 50  0001 C CNN
-F 3 "~" H 6050 5800 50  0001 C CNN
-F 4 "1276-1043-2-ND" H 6050 5800 50  0001 C CNN "Part Number"
-	1    6050 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -710,7 +698,7 @@ $EndComp
 Wire Wire Line
 	2950 6400 3650 6400
 Text Label 2000 6400 2    50   ~ 0
-WS2812_0_DATA
+WS2812_0_DATA_UC
 $Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 5FDA1803
@@ -885,32 +873,6 @@ Wire Wire Line
 Connection ~ 650  6950
 Wire Wire Line
 	650  6950 650  7050
-$Comp
-L power:+3.3V #PWR0133
-U 1 1 5FD00D52
-P 6050 5550
-F 0 "#PWR0133" H 6050 5400 50  0001 C CNN
-F 1 "+3.3V" H 6065 5723 50  0000 C CNN
-F 2 "" H 6050 5550 50  0001 C CNN
-F 3 "" H 6050 5550 50  0001 C CNN
-	1    6050 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 5550 6050 5650
-$Comp
-L power:GND #PWR0134
-U 1 1 5FD0A22D
-P 6050 6050
-F 0 "#PWR0134" H 6050 5800 50  0001 C CNN
-F 1 "GND" H 6055 5877 50  0000 C CNN
-F 2 "" H 6050 6050 50  0001 C CNN
-F 3 "" H 6050 6050 50  0001 C CNN
-	1    6050 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 6050 6050 5950
 $Comp
 L Device:R R11
 U 1 1 5FD87318
@@ -1090,7 +1052,7 @@ U 1 1 6138C8C2
 P 4150 4350
 F 0 "U3" H 3600 3400 50  0000 C CNN
 F 1 "EFM32HG308F64G-C-QFN24" H 4800 3400 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_5x5mm_P0.65mm_EP3.6x3.6mm" H 4200 3400 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_5x5mm_P0.65mm_EP3.6x3.6mm_ThermalVias" H 4200 3400 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/efm32hg-datasheet.pdf" H 4200 3400 50  0001 C CNN
 	1    4150 4350
 	1    0    0    -1  
@@ -1200,15 +1162,15 @@ $EndComp
 Wire Wire Line
 	2000 6400 2350 6400
 Text Label 2000 7000 2    50   ~ 0
-WS2812_1_DATA
+WS2812_1_DATA_UC
 Wire Wire Line
 	2000 7000 2350 7000
 Text Notes 1450 7650 0    50   ~ 0
 TODO: Replace with SN74LVC1T04 inverter
 Text Label 4950 4550 0    50   ~ 0
-WS2812_0_DATA
+WS2812_0_DATA_UC
 Text Label 3350 4650 2    50   ~ 0
-WS2812_1_DATA
+WS2812_1_DATA_UC
 Wire Wire Line
 	3450 4650 3350 4650
 NoConn ~ 3450 3850
@@ -1218,8 +1180,6 @@ Wire Wire Line
 	3450 4150 3350 4150
 Wire Wire Line
 	3350 4250 3450 4250
-NoConn ~ 3450 4750
-NoConn ~ 4850 4450
 Text Label 4950 4950 0    50   ~ 0
 GATE_1_R
 Wire Wire Line
@@ -1327,4 +1287,14 @@ Wire Wire Line
 	2000 750  2000 1000
 Wire Wire Line
 	2000 1300 2000 1500
+Text Label 4950 4450 0    50   ~ 0
+WS2812_0_~OE
+Text Label 3350 4750 2    50   ~ 0
+WS2812_1_~OE
+Wire Wire Line
+	4950 4450 4850 4450
+Wire Wire Line
+	3450 4750 3350 4750
+Text Label 4950 5150 0    50   ~ 0
+UC_DECOUPLE
 $EndSCHEMATC
