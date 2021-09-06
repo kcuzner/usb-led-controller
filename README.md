@@ -17,3 +17,14 @@ This one is a refresh of that idea, with a few additions I've picked up after an
  - Linux control daemon.
  - Windows control service.
 
+## 2021 Part Shortage notes
+
+ - STM32 can be swapped out for:
+   - Silabs EFM32HG family
+    - EFM32HG308 in the 24-QFN package has enough timers and UARTs to support the application
+   - Microchip AT SAM L22 family
+ - FETs are jellybean
+ - Regulator might be integrated into uC
+ - Level translator has no direct replacement
+   - Do I really need the tristate version? Why?
+   - The SN74LVC1T04 (inverter, non-tristate) seems available. Could I run this inverted?
