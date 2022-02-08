@@ -1,10 +1,12 @@
 # kicad
 
+*-backups
 *.bak
 *.bck
 *.net
 *.kicad_pcb-bak
 *.sch-bak
+*.kicad_prl
 kicad/$*
 kicad/*.lst
 kicad/*.csv
